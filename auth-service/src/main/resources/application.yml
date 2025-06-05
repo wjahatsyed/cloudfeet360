@@ -1,0 +1,16 @@
+server:
+  port: 8081
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/cloudfleet_auth
+    username: postgres
+    password: postgres
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+jwt:
+  secret: 6851902-smw-sma-khi-pk-ksa-6851902-289394-kfu-pm-31261-dmm
+  expiration: 86400000 # 1 day in milliseconds
